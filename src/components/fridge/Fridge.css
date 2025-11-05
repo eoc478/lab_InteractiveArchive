@@ -1,0 +1,13 @@
+.fridgeContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100vh;
+}
+
+.fridgeImg{
+    width: 15vw;
+    height: auto;
+}
