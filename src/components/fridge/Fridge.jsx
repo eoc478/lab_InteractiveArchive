@@ -2,10 +2,10 @@ import './Fridge.css';
 import fridgeImage from './../../assets/fridge.png';
 
 
-function Fridge({children}){
+function Fridge({children, onClick}){
     return(
         <>
-        <div className="fridgeContainer">
+        <div className="fridgeContainer" onClick={onClick}>
             <img src={fridgeImage} alt="Fridge" className="fridgeImg"/>
             {children}
         </div>

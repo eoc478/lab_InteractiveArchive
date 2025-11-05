@@ -12,6 +12,10 @@ body{
     height: 100vh;
 }
 
+.mainContainer.zoom {
+  zoom: 4;
+}
+
 .magnetArea{
    position: absolute;
   top: 5%;   /* leave some margin inside fridge */
@@ -19,3 +23,4 @@ body{
   width: 80%; /* fill inside fridge minus margins */
   height: 90%;
 }
+
