@@ -1,0 +1,12 @@
+.cowAudio{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 5px;
+    height: auto;
+}
+
+.cowImg{
+    width: 50px;
+    height: auto;
+}

@@ -4,7 +4,9 @@ import './App.css'
 import Fridge from './components/fridge/Fridge'
 import Magnets from './components/magnets/magnets'
 import Canvas from './components/canvas/Canvas.jsx'
+import Audio from './components/audio/Audio.jsx'
 import imageData from './data/magnets.json'
+
 
 function App() {
   const [magnets, setMagnets] = useState(() => 
@@ -62,7 +64,9 @@ function App() {
   };
 
   return (
+    
     <DndContext onDragStart={handleDragStart} onDragMove={handleDragMove} onDragEnd={handleDragEnd}>
+      <Audio></Audio>
       <div className={`mainContainer ${zoom ? 'zoom' : ''}`}>
 
         <Fridge onClick={fridgeClick}>
