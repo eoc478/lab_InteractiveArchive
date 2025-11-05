@@ -3,6 +3,7 @@ import { DndContext, DragOverlay } from '@dnd-kit/core'
 import './App.css'
 import Fridge from './components/fridge/Fridge'
 import Magnets from './components/magnets/magnets'
+import Canvas from './components/canvas/Canvas.jsx'
 import imageData from './data/magnets.json'
 
 function App() {
@@ -87,6 +88,7 @@ function App() {
     </DndContext>
 
   )
+  
 }
 
 export default App

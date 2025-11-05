@@ -1,7 +1,8 @@
 body{
-  background: url('./assets/backroomsWP.png');
+  background: url('./assets/backrooms2.png') no-repeat center center;
+  background-size: cover;
   /* zoom: 5; */
-  /* background: black */
+  /* background: rgb(17, 14, 5) */
 }
 
 .mainContainer{
