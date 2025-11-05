@@ -2,11 +2,12 @@ import './Fridge.css';
 import fridgeImage from './../../assets/fridge.png';
 
 
-function Fridge(){
+function Fridge({children}){
     return(
         <>
         <div className="fridgeContainer">
-            <img src={fridgeImage} alt="Refrigerator" className="fridgeImg"/>
+            <img src={fridgeImage} alt="Fridge" className="fridgeImg"/>
+            {children}
         </div>
         </>
     )

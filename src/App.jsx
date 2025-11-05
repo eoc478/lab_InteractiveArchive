@@ -5,22 +5,32 @@ import Magnets from './components/magnets/magnets'
 import imageData from './data/magnets.json'
 
 function App() {
-  const fridgeImg = './assets/fridge.png'
-  const [magnets] = useState(imageData);
+  const [magnets] = useState(() => 
+    imageData.map(magnet => ({
+      ...magnet, 
+      position: {
+        top: Math.random() * 90,
+        left: Math.random() * 90
+      }
+    }))
+  );
 
   return (
       <div className="mainContainer">
           <Fridge>
+            <div className="magnetArea">
+              <div className="magnets">
+                {magnets.map((img) => (
+                  <Magnets 
+                    key={img.id}
+                    image={img}
+                    position={img.position}
+                  />
+                ))}
+              </div>
+            </div>
 
           </Fridge>
-        <div className="magnets">
-          {magnets.map((img, i) => (
-            <Magnets 
-              key={img.id}
-              image={img}
-            />
-          ))}
-        </div>
       </div>
   )
 }

@@ -11,3 +11,11 @@ body{
     width: auto;
     height: 100vh;
 }
+
+.magnetArea{
+   position: absolute;
+  top: 5%;   /* leave some margin inside fridge */
+  left: 15%;
+  width: 80%; /* fill inside fridge minus margins */
+  height: 90%;
+}
